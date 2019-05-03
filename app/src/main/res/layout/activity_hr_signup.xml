@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background"
+    tools:context=".HrSignup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_hr_Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp"
+                android:src="@drawable/arrow1"
+                app:layout_constraintEnd_toStartOf="@+id/im_forgotlogo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/im_signup_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="104dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/applogo"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_signup"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="187dp"
+                android:layout_marginRight="187dp"
+                android:text="HR Sign Up"
+                android:textColor="#072DF7"
+
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.352"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_hr_sign_name"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/et_borders"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center"
+                android:hint="@string/et_user"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_signup" />
+
+            <EditText
+                android:id="@+id/et_hr_sign_pass"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/et_borders"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center"
+                android:hint="@string/et_password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_hr_sign_name" />
+
+            <EditText
+                android:id="@+id/et_hr_Email"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/et_borders"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center"
+                android:hint="@string/et_email"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_hr_sign_pass" />
+
+            <EditText
+                android:id="@+id/et_hr_Phone"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/et_borders"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center"
+                android:hint="@string/et_phone"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_hr_Email" />
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_hr_alt_phone"-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginStart="30dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginRight="56dp"-->
+                <!--android:background="@drawable/et_borders"-->
+                <!--android:ems="10"-->
+                <!--android:fontFamily="@font/lato_regular"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="@string/et_altphone"-->
+                <!--android:inputType="text"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintHorizontal_bias="0.494"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/et_hr_Phone" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_hr_company_type"-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginStart="30dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginRight="56dp"-->
+                <!--android:background="@drawable/et_borders"-->
+                <!--android:ems="10"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="@string/et_company"-->
+                <!--android:inputType="textPersonName"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintHorizontal_bias="0.494"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/et_hr_alt_phone" />-->
+
+            <EditText
+                android:id="@+id/et_hr_qual"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/et_borders"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/et_hrqualif"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_hr_Phone" />
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_hr_Address"-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginStart="30dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginEnd="56dp"-->
+                <!--android:layout_marginRight="56dp"-->
+                <!--android:background="@drawable/et_borders"-->
+                <!--android:ems="10"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="@string/et_adrs"-->
+                <!--android:inputType="textMultiLine"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/et_hr_qual" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_hr_Zipcode"-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginStart="30dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginEnd="55dp"-->
+                <!--android:layout_marginRight="55dp"-->
+                <!--android:background="@drawable/et_borders"-->
+                <!--android:ems="10"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="@string/et_zip"-->
+                <!--android:inputType="textMultiLine"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/et_hr_Address" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_hr_adhar"-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginStart="30dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginEnd="55dp"-->
+                <!--android:layout_marginRight="55dp"-->
+                <!--android:background="@drawable/et_borders"-->
+                <!--android:ems="10"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="@string/et_aad_no"-->
+                <!--android:inputType="textPersonName"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/et_hr_Zipcode" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_hr_linked"-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginStart="30dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginEnd="55dp"-->
+                <!--android:layout_marginRight="55dp"-->
+                <!--android:background="@drawable/et_borders"-->
+                <!--android:ems="10"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="@string/et_linkedin"-->
+                <!--android:inputType="textPersonName"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/et_hr_adhar" />-->
+
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_hr_fbook"-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginStart="30dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginEnd="55dp"-->
+                <!--android:layout_marginRight="55dp"-->
+                <!--android:background="@drawable/et_borders"-->
+                <!--android:ems="10"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="@string/et_faceb"-->
+                <!--android:inputType="textPersonName"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/et_hr_linked" />-->
+
+            <LinearLayout
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/et_hr_pro_img"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="0dp"
+
+                    android:background="@drawable/btn_borders"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="select image"
+                    android:textColor="#fff"
+
+                    android:textSize="10dp"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_hr_qual"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/et_hr_pro_pic"
+                    android:layout_width="197dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="5dp"
+
+                    android:background="@drawable/et_borders"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/et_pr_pic"
+                    android:inputType="text"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_hr_qual" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_hr_upload_img"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/btn_borders"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Upload Image"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/bt_select_Aadhar_file"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/btn_borders"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="select Aadhar Image"
+
+                    android:textColor="#fff"
+
+
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/et_hr_adhar_img"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/et_borders"
+
+                    android:gravity="center"
+                    android:hint="@string/et_aad_pic"
+
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_hr_pro_pic" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_upload_Aadhar_file"
+
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/btn_borders"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Upload Aadhar Image"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/bt_select_Resume"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/btn_borders"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="select Resume"
+
+                    android:textColor="#fff"
+
+
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/et_hr_resume"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/et_borders"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/et_resume"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_hr_adhar_img" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_upload_resume"
+
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/btn_borders"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Upload Resume"
+                android:textColor="#fff" />
+
+
+            <Button
+                android:id="@+id/bt_hr_signup"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/btn_borders"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textColor="#fff"
+
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_hr_resume" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/bt_hr_signup" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

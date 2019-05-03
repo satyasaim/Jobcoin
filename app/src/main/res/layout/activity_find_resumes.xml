@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FindResumes">
+
+    <!--<Button-->
+        <!--android:id="@+id/bt_view_all_profiles"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginStart="120dp"-->
+        <!--android:layout_marginLeft="120dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginEnd="207dp"-->
+        <!--android:layout_marginRight="207dp"-->
+        <!--android:background="@drawable/btn_borders"-->
+        <!--android:text="Click Here to View All Profiles"-->
+        <!--android:textColor="#fff"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.349"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/constraintLayout10" />-->
+
+    <RelativeLayout
+        android:id="@+id/layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#07114E"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginTop="15dp"
+            android:src="@drawable/inner_logo" />
+
+        <TextView
+            android:id="@+id/tv_resume"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="FIND PROFILE"
+            android:textColor="#fff"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_bronze"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_borders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_id">
+
+        <ImageView
+            android:id="@+id/img_bronze_coin"
+            android:layout_width="87dp"
+
+            android:layout_height="96dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/bronze_coin_xl"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_bronze_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Bronze Coin"
+            android:textColor="#BD5839"
+            android:textSize="22sp"
+
+            app:layout_constraintStart_toEndOf="@+id/img_bronze_coin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_bronze"
+            android:layout_width="1dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:background="#858080"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bronze_coin"
+            app:layout_constraintVertical_bias="0.876" />
+
+        <TextView
+            android:id="@+id/tv_bcoin_count"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:fontFamily="@font/lato_black"
+            android:text="0000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_bronze"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bronze_count" />
+
+
+        <TextView
+            android:id="@+id/tv_bronze_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/lato_black"
+            android:text="Total Profiles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_bronze"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/bt_bronze_all"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_borders"
+            android:fontFamily="@font/lato_bold"
+            android:text="View All"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_bronze"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bcoin_count" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cnl_silver"
+        android:layout_width="350dp"
+
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_borders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_bronze">
+
+        <ImageView
+            android:id="@+id/img_silver_coin"
+            android:layout_width="87dp"
+
+            android:layout_height="96dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/silver_coin_xl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_silver_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Silver Coin"
+            android:textColor="#A2A29F"
+            android:textSize="22sp"
+
+            app:layout_constraintStart_toEndOf="@+id/img_silver_coin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/silver_view"
+            android:layout_width="1dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:background="#858080"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_silver_coin"
+            app:layout_constraintVertical_bias="0.876" />
+
+        <TextView
+            android:id="@+id/tv_silver_count"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/lato_black"
+            android:text="0000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/silver_view"
+            app:layout_constraintTop_toBottomOf="@+id/tv_silver_profiles" />
+
+
+        <TextView
+            android:id="@+id/tv_silver_profiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/lato_black"
+            android:text="Total Profiles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/silver_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/bt_silver_all"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_borders"
+            android:fontFamily="@font/lato_bold"
+            android:text="View All"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/silver_view"
+            app:layout_constraintTop_toBottomOf="@+id/tv_silver_count" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cons_gold"
+        android:layout_width="350dp"
+
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_borders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cnl_silver">
+
+        <ImageView
+            android:id="@+id/img_gold_coin"
+            android:layout_width="87dp"
+
+            android:layout_height="96dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/gold_coin_xl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_gold_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Gold Coin"
+            android:textColor="#C99417"
+            android:textSize="22sp"
+
+            app:layout_constraintStart_toEndOf="@+id/img_gold_coin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/gold_view"
+            android:layout_width="1dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:background="#858080"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gold_coin"
+            app:layout_constraintVertical_bias="0.876" />
+
+        <TextView
+            android:id="@+id/tv_gold_count"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/lato_black"
+            android:text="0000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gold_view"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gold_profiles" />
+
+
+        <TextView
+            android:id="@+id/tv_gold_profiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/lato_black"
+            android:text="Total Profiles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gold_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/bt_gold_all"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_borders"
+            android:fontFamily="@font/lato_bold"
+            android:text="View All"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gold_view"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gold_count" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        android:layout_width="350dp"
+
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_borders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cons_gold">
+
+        <ImageView
+            android:id="@+id/img_coin_type"
+            android:layout_width="87dp"
+
+            android:layout_height="96dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/platinum_coin_xl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_coin_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Platinum Coin"
+            android:textColor="#6B7A7976"
+            android:textSize="22sp"
+
+            app:layout_constraintStart_toEndOf="@+id/img_coin_type"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_select_1"
+            android:layout_width="1dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:background="#858080"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_coin_type_name"
+            app:layout_constraintVertical_bias="0.876" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/lato_black"
+            android:text="0000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_select_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_total_profiles" />
+
+
+        <TextView
+            android:id="@+id/tv_total_profiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/lato_black"
+            android:text="Total Profiles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_select_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/bt_pla_view_all"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_borders"
+            android:fontFamily="@font/lato_bold"
+            android:text="View All"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_select_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_count" />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

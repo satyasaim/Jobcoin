@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background"
+    tools:context=".ProjectAndInternship">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Project Or Internship"
+        android:textColor="#3F51B5"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/et_project_title"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:hint="@string/et_pro_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/et_project_desc"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:hint="@string/et_pro_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_project_title" />
+
+    <TextView
+        android:id="@+id/tv_telugu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="302dp"
+        android:layout_marginRight="302dp"
+        android:fontFamily="@font/lato_black"
+        android:text="Telugu:*"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_project_desc" />
+
+    <CheckBox
+        android:id="@+id/ch_tel_read"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Read"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_telugu" />
+
+    <CheckBox
+        android:id="@+id/ch_hindi_right"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Write"
+        app:layout_constraintStart_toEndOf="@+id/ch_hindi_read"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hindi" />
+
+    <CheckBox
+        android:id="@+id/ch_hindi_speak"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Speak"
+        app:layout_constraintStart_toEndOf="@+id/ch_hindi_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hindi" />
+
+
+    <TextView
+        android:id="@+id/tv_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginRight="300dp"
+        android:fontFamily="@font/lato_black"
+        android:text="English:*"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ch_tel_read" />
+
+    <CheckBox
+        android:id="@+id/ch_eng_read"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Read"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eng" />
+
+    <CheckBox
+        android:id="@+id/ch_tel_right"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Write"
+        app:layout_constraintStart_toEndOf="@+id/ch_tel_read"
+        app:layout_constraintTop_toBottomOf="@+id/tv_telugu" />
+
+    <CheckBox
+        android:id="@+id/ch_tel_speak"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Speak"
+        app:layout_constraintStart_toEndOf="@+id/ch_tel_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_telugu" />
+
+
+    <TextView
+        android:id="@+id/tv_hindi"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="311dp"
+        android:layout_marginRight="311dp"
+        android:fontFamily="@font/lato_black"
+        android:text="Hindi:*"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ch_eng_read" />
+
+    <CheckBox
+        android:id="@+id/ch_hindi_read"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Read"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hindi" />
+
+    <CheckBox
+        android:id="@+id/ch_eng_right"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Write"
+        app:layout_constraintStart_toEndOf="@+id/ch_eng_read"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eng" />
+
+    <CheckBox
+        android:id="@+id/ch_eng_speak"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Speak"
+        app:layout_constraintStart_toEndOf="@+id/ch_eng_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eng" />
+
+    <TextView
+        android:id="@+id/tv_oriya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="317dp"
+        android:layout_marginRight="317dp"
+        android:fontFamily="@font/lato_black"
+        android:text="Oria:*"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ch_hindi_read" />
+
+    <CheckBox
+        android:id="@+id/ch_oria_read"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Read"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_oriya" />
+
+    <CheckBox
+        android:id="@+id/ch_oria_right"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+
+        android:text="Write"
+        app:layout_constraintStart_toEndOf="@+id/ch_oria_read"
+        app:layout_constraintTop_toBottomOf="@+id/tv_oriya" />
+
+    <CheckBox
+        android:id="@+id/ch_oria_speak"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_borders"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:text="Speak"
+        app:layout_constraintStart_toEndOf="@+id/ch_oria_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_oriya" />
+
+    <Button
+        android:id="@+id/bt_project_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_borders"
+        android:text="Previous"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ch_oria_read" />
+
+    <Button
+        android:id="@+id/bt_project_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/btn_borders"
+        android:text="Next"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_project_prev"
+        app:layout_constraintTop_toBottomOf="@+id/ch_oria_right" />
+
+
+</android.support.constraint.ConstraintLayout>

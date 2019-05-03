@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_name">text_string</string>
+    <string name="app_name"></string>
+    <string name="signup_link">Donot have an account?<b>Sign Up Here</b></string>
+    <string name="et_email"><font size="15">Email Address</font></string>
+    <string name="et_password"><font size="15">Password</font></string>
+    <string name="et_user"><font size="15">User Name</font></string>
+    <string name="et_phone"><font size="15">Phone</font></string>
+    <string name="et_altphone"><font size="15">Alt Phone</font></string>
+    <string name="et_company"><font size="15">Company Type</font></string>
+    <string name="et_hrqualif"><font size="15">Qualification</font></string>
+    <string name="et_adrs"><font size="15">Address</font></string>
+    <string name="et_zip"><font size="15">Zipcode</font></string>
+    <string name="et_aad_no"><font size="15">Adhar No</font></string>
+    <string name="et_linkedin"><font size="15">LinkedIn</font></string>
+    <string name="et_faceb"><font size="15">Facebook</font></string>
+    <string name="et_pr_pic"><font size="15">Profile Pic</font></string>
+    <string name="et_aad_pic"><font size="15">Aadhar Image</font></string>
+    <string name="et_resume"><font size="15">Resume</font></string>
+    <string name="et_confpass"><font size="15">Confirm Password</font></string>
+    <string name="et_grade"><font size="15">Grade</font></string>
+    <string name="et_percentage"><font size="15">Percentage</font></string>
+    <string name="et_certificate"><font size="15">Certificate/Technical/Diploma/ITI/Others</font></string>
+    <string name="et_look"><font size="15">Looking for jobs on...</font></string>
+    <string name="et_sub2"><font size="15">Key Skills Subject one</font></string>
+    <string name="et_sub3"><font size="15">Key Skills Subject two</font></string>
+    <string name="et_exp"><font size="15">Total Experience</font></string>
+    <string name="et_perm_add"><font size="15">Permanent Address</font></string>
+    <string name="et_pre_add"><font size="15">Present Address</font></string>
+    <string name="et_loc"><font size="15">Location</font></string>
+    <string name="et_pro_title"><font size="15"> Project Title</font></string>
+    <string name="et_pro_desc"><font size="15"> Project Description</font></string>
+    <string name="et_cont_email"><font size="15">email</font></string>
+    <string name="et_cont_phone"><font size="15">Phone</font></string>
+    <string name="et_cont_altph"><font size="15">Alternate Phone</font></string>
+    <string name="et_productid"><font size="15">Product Info</font></string>
+    <string name="et_productname"><font size="15">Membership Name</font></string>
+    <string name="et_productprice"><font size="15">Membership Price</font></string>
+    <string name="et_currentbal"><font size="15">Current Balance</font></string>
+    <string name="et_totalamt"><font size="15">Total Amount</font></string>
+
+
+</resources>

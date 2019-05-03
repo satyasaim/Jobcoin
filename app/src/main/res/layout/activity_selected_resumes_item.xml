@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/background"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/leaner_white"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginRight="71dp"
+        android:layout_marginBottom="4dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_selected_seeker_name"
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+
+            android:text="Lokesh Vanapalli" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp">
+
+            <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/view_icon" />
+
+            <ImageView
+
+                android:id="@+id/img_addprofile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/comment_icon" />
+
+            <ImageView
+
+                android:id="@+id/img_selected_cointype"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="70dp"
+                android:background="#000"
+                android:src="@drawable/inner_logo" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/tv_selected_gender"
+
+                android:layout_width="55dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+
+
+                android:text="Gender:"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_selected_gender_type"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="0dp"
+                android:text="Male"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_select_age"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="0dp"
+
+                android:text="Age:"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_pla_age_num"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="0dp"
+                android:text="2 years"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_selected_mob"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="0dp"
+
+                android:text="Mobile:"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_selected_mob_num"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="0dp"
+                android:text="00 00 00 00"
+                android:textSize="10dp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="0dp"
+            android:background="#999898">
+
+            <RelativeLayout
+                android:id="@+id/educa_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_selected_edu"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="Education:"
+                    android:textColor="#fff"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_select_edudetails"
+
+                    android:layout_width="55dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="B.Tech(CEC)"
+                    android:textColor="#fff"
+                    android:textSize="10dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv_select_exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:text="Experience:"
+                    android:textColor="#fff"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_select_exp_year"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="2 Years"
+                    android:textColor="#fff"
+                    android:textSize="10dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/tv_skills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:text="Skills:"
+                    android:textColor="#fff"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_skil_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="php"
+                    android:textColor="#fff"
+                    android:textSize="10dp" />
+                <TextView
+                    android:id="@+id/tv_skil_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text=",java"
+                    android:textColor="#fff"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

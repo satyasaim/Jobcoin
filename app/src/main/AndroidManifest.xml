@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.media3.jobcoin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/Jobcointheme">
+        <activity android:name=".WebView">
+            <tools:validation testUrl="https://jobcoin-app.co.in/payment-success" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="jobcoin-app.co.in"
+                    android:pathPrefix="/payment-success" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PlatinumProfileList" />
+        <activity android:name=".GoldProfileList" />
+        <activity android:name=".PaymentDetails" />
+        <activity android:name=".PlatinumDescription" />
+        <activity android:name=".GoldDescription" />
+        <activity android:name=".SilverDescription" />
+        <activity android:name=".BronzeDescription" />
+        <activity android:name=".MyPlatinumCoin" />
+        <activity android:name=".MySilverCoin" />
+        <activity android:name=".MyBronzeCoin" />
+        <activity android:name=".ContactAndResumeupload" />
+        <activity android:name=".ProjectAndInternship" />
+        <activity android:name=".ExperienceAndAddress" />
+        <activity android:name=".JobSeekerCourses" />
+        <activity android:name=".ProfileList" />
+        <activity android:name=".SilverProfileList" />
+        <activity android:name=".SelectedResumes" />
+        <activity android:name=".SelectYrHr" />
+        <activity android:name=".MeetHrExecutive" />
+        <activity android:name=".MyCoin" />
+        <activity android:name=".BuyCoin" />
+        <activity android:name=".FindResumes" />
+        <activity android:name=".EditHrAccount" />
+        <activity android:name=".CoinEarnings" />
+        <activity android:name=".JseekerResume" />
+        <activity android:name=".HrMainScreen" />
+        <activity android:name=".JobSeekerMainScreen" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".SinupSeperator" />
+        <activity android:name=".HrSignup" />
+        <activity android:name=".JseekerSignUp" />
+        <activity android:name=".Planbenifits" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

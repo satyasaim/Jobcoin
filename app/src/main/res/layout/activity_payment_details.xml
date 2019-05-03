@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background"
+    tools:context=".PaymentDetails">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginLeft="166dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginRight="190dp"
+        android:text="Payment"
+        android:textSize="30dp"
+        android:textColor="#3F51B5"
+        android:fontFamily="@font/lato_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_payment_name"
+            android:layout_width="300dp"
+            android:layout_height="50sp"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/et_borders"
+            android:ems="10"
+
+            android:gravity="center"
+            android:hint="@string/et_user"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/et_payment_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/et_borders"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/et_email"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_payment_name" />
+
+        <EditText
+            android:id="@+id/et_payment_ph"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/et_borders"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/et_phone"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_payment_email" />
+
+        <EditText
+            android:id="@+id/et_payment_address"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/et_borders"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/et_adrs"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_payment_ph" />
+
+        <EditText
+            android:id="@+id/et_payment_prductid"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/et_borders"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/et_productid"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_payment_address" />
+
+        <EditText
+            android:id="@+id/et_payment_prodname"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/et_borders"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/et_productname"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_payment_prductid" />
+
+        <EditText
+            android:id="@+id/et_payment_prodprice"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/et_borders"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/et_productprice"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_payment_prodname" />
+
+        <EditText
+            android:id="@+id/ct_payment_currentbal"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/et_borders"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/et_currentbal"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_payment_prodprice" />
+
+        <EditText
+            android:id="@+id/et_payment_totalbal"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/et_borders"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/et_totalamt"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ct_payment_currentbal" />
+
+        <Button
+            android:id="@+id/bt_confpay"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:background="@drawable/btn_borders"
+            android:text=" Confirm Payment "
+            android:textColor="#fff"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_payment_totalbal" />
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="173dp"
+            android:layout_marginLeft="173dp"
+            android:layout_marginEnd="173dp"
+            android:layout_marginRight="173dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_confpay" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

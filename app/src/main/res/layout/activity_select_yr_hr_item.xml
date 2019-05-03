@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/background"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#fff"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_id">
+
+
+        <TextView
+            android:id="@+id/tv_hr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="331dp"
+            android:layout_marginRight="331dp"
+            android:text="Mr.Rajiv"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="121dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="395dp"
+            android:layout_marginRight="395dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_experience"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Experience" />
+
+                <TextView
+                    android:id="@+id/tv_inyears"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_experience"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="00 Years"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_inyears"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="17dp"
+                    android:text="mobile" />
+
+                <TextView
+                    android:id="@+id/tv_mo_number"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_mobile"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="00 00 00 00 00" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="121dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_placements"-->
+                <!--android:layout_width="160dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="Total Placements"-->
+                <!--android:textSize="14sp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_plac_no"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_below="@+id/tv_placements"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:text="00"-->
+
+                <!--/>-->
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/tv_emailid"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_email"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+
+                    android:text="rajiv@jobcoin.com" />
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/profile_image" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+
+        <!--android:id="@+id/linearLayout"-->
+        <!--android:layout_width="65dp"-->
+        <!--android:layout_height="121dp"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:layout_marginEnd="32dp"-->
+        <!--android:layout_marginRight="32dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/linearLayout3"-->
+        <!--app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_rating"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_marginTop="65dp"-->
+        <!--android:text=" Rating" />-->
+
+        <!--&lt;!&ndash;<RatingBar&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/rat_bar"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="1dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="50dp" />&ndash;&gt;-->
+        <!--<ImageView-->
+        <!--android:id="@+id/img_star"-->
+        <!--android:layout_width="5dp"-->
+        <!--android:layout_height="5dp"-->
+        <!--android:layout_marginStart="0dp"-->
+        <!--android:layout_marginLeft="0dp"-->
+        <!--android:layout_marginTop="90dp"-->
+
+        <!--android:src="@drawable/star_icon" />-->
+        <!--&lt;!&ndash;android:layout_marginTop="60dp"&ndash;&gt;-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_star2"-->
+        <!--android:layout_width="5dp"-->
+        <!--android:layout_height="5dp"-->
+        <!--android:layout_marginTop="90dp"-->
+
+
+        <!--android:src="@drawable/star_icon" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_star3"-->
+        <!--android:layout_width="5dp"-->
+        <!--android:layout_height="5dp"-->
+        <!--android:layout_marginTop="90dp"-->
+
+
+        <!--android:src="@drawable/star_icon" />-->
+        <!--</LinearLayout>-->
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

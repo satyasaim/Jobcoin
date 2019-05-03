@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MyBronzeCoin">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/lo_constraint_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lo_constraint_edit"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/bt_bronze_plan"
+            android:layout_width="193dp"
+            android:layout_height="50dp"
+            android:background="#000"
+            android:fontFamily="@font/lato_bold"
+            android:text="View Plan Benifits"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/bt_br_change_plan"
+            android:layout_width="217dp"
+            android:layout_height="50dp"
+            android:background="#F0040D"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="left|center_vertical"
+            android:text="           Change Plan"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/bt_bronze_plan"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#07114E"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginTop="15dp"
+            android:src="@drawable/inner_logo" />
+
+        <TextView
+            android:id="@+id/tv_resume"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="YOUR COIN"
+            android:textColor="#fff"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_bronze_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginLeft="166dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginRight="166dp"
+        android:src="@drawable/bronze_coin_xl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_id" />
+
+    <TextView
+        android:id="@+id/tv_coin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="BRONZE COIN"
+        android:textColor="#E6CF5605"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bronze_coin" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/lo_constraint_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_coin_name">
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#858080"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/relative_2"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_started"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_black"
+                android:text="Started"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_start_date"
+                android:layout_width="200dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="DD/MM/YY"
+                android:inputType="textPersonName"
+                android:textColorHint="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_started"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_3"
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#858080"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_start_date" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/relative_3"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relative_2">
+
+            <TextView
+                android:id="@+id/tv_expire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_black"
+                android:text="Expire"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_expire"
+                android:layout_width="200dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="DD/MM/YY"
+                android:inputType="textPersonName"
+                android:textColorHint="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_expire"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_4"
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="1dp"
+                android:background="#858080"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_expire" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/relative_4"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relative_3">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_black"
+                android:text="Status"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_active"
+                android:layout_width="200dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Active"
+                android:inputType="textPersonName"
+                android:textColorHint="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_status"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="170dp"
+            android:background="#858080"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_1" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

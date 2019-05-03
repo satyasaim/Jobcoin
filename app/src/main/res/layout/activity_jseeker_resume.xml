@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/resume_background"
+    tools:context=".JseekerResume">
+
+
+    <TextView
+        android:id="@+id/tv_resume_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Create Your Job Winning Resume"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_layout_id" />
+
+    <EditText
+        android:id="@+id/et_resume_fullname"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:background="@drawable/et_borders"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Full name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resume_text" />
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:id="@+id/constraint_id"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:orientation="vertical"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/et_resume_fullname">-->
+
+    <EditText
+        android:id="@+id/et_resume_dob"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_borders"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="yyyy-mm-dd"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_resume_fullname" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="42dp"-->
+        <!--android:layout_height="36dp"-->
+        <!--android:layout_marginStart="132dp"-->
+        <!--android:layout_marginLeft="132dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:src="@drawable/down_spin_img"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/et_resume_merriage"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <Spinner
+        android:id="@+id/et_resume_gender"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:background="@drawable/et_borders"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_resume_dob"
+        app:layout_constraintTop_toBottomOf="@+id/et_resume_fullname" />
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/down_spin_img"
+        app:layout_constraintBottom_toBottomOf="@+id/et_resume_gender"
+        app:layout_constraintEnd_toEndOf="@+id/et_resume_gender" />
+
+
+    <Spinner
+        android:id="@+id/et_resume_merriage"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:background="@drawable/et_borders"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Merital Status"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_resume_dob" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/down_spin_img"
+        app:layout_constraintEnd_toEndOf="@+id/et_resume_merriage"
+        app:layout_constraintTop_toTopOf="@+id/et_resume_merriage" />
+
+    <Spinner
+        android:id="@+id/et_resume_disablity"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:background="@drawable/et_borders"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Are you Handicaped"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_resume_merriage" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/down_spin_img"
+        app:layout_constraintEnd_toEndOf="@+id/et_resume_disablity"
+        app:layout_constraintTop_toTopOf="@+id/et_resume_disablity" />
+
+
+    <EditText
+        android:id="@+id/et_resume_father_name"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:background="@drawable/et_borders"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Father's Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_resume_disablity" />
+
+    <EditText
+        android:id="@+id/et_resume_mother_name"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:background="@drawable/et_borders"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Mother's  Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_resume_father_name" />
+
+    <ImageView
+        android:id="@+id/img_resume_button"
+        android:layout_width="74dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_resume_mother_name" />
+
+    <RelativeLayout
+        android:id="@+id/rl_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#07114E"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginTop="27dp"
+            android:src="@drawable/inner_logo" />
+
+        <TextView
+            android:id="@+id/tv_resume"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="RESUME"
+            android:textColor="#fff"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

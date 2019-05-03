@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".JobSeekerMainScreen">
+
+    <com.media3.jobcoin.CircleImageView
+        android:id="@+id/img_seeker"
+        android:layout_width="wrap_content"
+        android:layout_height="202dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/profilepic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_seeker_resume"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:background="@drawable/btn_borders"
+        android:drawableLeft="@drawable/resume"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:text="       RESUMES"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_seeker" />
+
+    <Button
+
+        android:id="@+id/bt_meet_hr_executive"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:background="@drawable/btn_borders"
+        android:drawableLeft="@drawable/meethrexecutive"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:text="     MEET HR EXECUTIVE"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_seeker_resume" />
+
+    <Button
+        android:id="@+id/bt_seeker_buycoin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:background="@drawable/btn_borders"
+        android:drawableLeft="@drawable/buy_coin"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:text="    BUY COIN / MY COIN "
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_meet_hr_executive" />
+
+    <Button
+        android:id="@+id/bt_seeker_alerts"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:background="@drawable/btn_borders"
+        android:drawableLeft="@drawable/alerts"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:text="       ALERTS"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_seeker_buycoin" />
+
+    <!--<Button-->
+        <!--android:id="@+id/tb_seeker_myaccount"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginStart="163dp"-->
+        <!--android:layout_marginLeft="163dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginEnd="163dp"-->
+        <!--android:layout_marginRight="163dp"-->
+        <!--android:background="@drawable/btn_borders"-->
+        <!--android:drawableLeft="@drawable/myaccount"-->
+        <!--android:fontFamily="@font/lato_bold"-->
+        <!--android:gravity="left|center_vertical"-->
+        <!--android:paddingLeft="18dp"-->
+        <!--android:text="        MY ACCOUNT"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="20dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.502"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/bt_seeker_alerts" />-->
+
+    <Button
+        android:id="@+id/bt_seeker_logout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:background="@drawable/btn_borders"
+        android:drawableLeft="@drawable/logout"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:text="         LOG OUT"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_seeker_alerts" />
+
+
+
+</android.support.constraint.ConstraintLayout>

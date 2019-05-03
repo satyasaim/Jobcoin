@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginRight="167dp"
+        android:src="@drawable/applogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_membershipdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/applogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:fontFamily="@font/lato_black"
+        android:text="Membership Details"
+        android:textColor="#3F51B5"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/applogo" />
+
+    <TextView
+        android:id="@+id/tv_description1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_membershipdetails"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:fontFamily="@font/lato_black"
+        android:text="1. Salary Package and How Many HRs'."
+        android:textColor="#3F51B5"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_membershipdetails" />
+
+    <TextView
+        android:id="@+id/tv_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_membershipdetails"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:fontFamily="@font/lato_black"
+        android:text="2. Assistance on a single profile."
+        android:textColor="#3F51B5"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description1" />
+
+    <TextView
+        android:id="@+id/tv_description3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_membershipdetails"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:fontFamily="@font/lato_black"
+        android:text="3. How Many Days Get In a Job*"
+        android:textColor="#3F51B5"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description2" />
+
+    <TextView
+        android:id="@+id/tv_description4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_membershipdetails"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="153dp"
+        android:layout_marginRight="153dp"
+        android:fontFamily="@font/lato_black"
+        android:text="4. How Many Interviews."
+        android:textColor="#3F51B5"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description3" />
+
+    <TextView
+        android:id="@+id/tv_description5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_membershipdetails"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:fontFamily="@font/lato_black"
+        android:text="5. Chat supported or Not."
+        android:textColor="#3F51B5"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description4" />
+
+    <TextView
+        android:id="@+id/tv_description6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_membershipdetails"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="135dp"
+        android:layout_marginRight="135dp"
+        android:fontFamily="@font/lato_black"
+        android:text="6. Phone supported or Not."
+        android:textColor="#3F51B5"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description5" />
+
+    <TextView
+        android:id="@+id/tv_description7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_membershipdetails"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="210dp"
+        android:layout_marginRight="210dp"
+        android:fontFamily="@font/lato_black"
+        android:text="7. 100% Refunded."
+        android:textColor="#3F51B5"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description6" />
+
+    <TextView
+        android:id="@+id/tv_description8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_membershipdetails"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:fontFamily="@font/lato_black"
+        android:text="8. 100% Chance to get your dream job."
+        android:textColor="#3F51B5"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description7" />
+
+
+</android.support.constraint.ConstraintLayout>
