@@ -61,7 +61,8 @@
         <activity android:name=".HrSignup" />
         <activity android:name=".JseekerSignUp" />
         <activity android:name=".Planbenifits" />
-        <activity android:name=".Login">
+        <activity android:name=".Login"/>
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

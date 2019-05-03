@@ -2,8 +2,8 @@
 <resources>
     <string name="string_name">text_string</string>
     <string name="app_name"></string>
-    <string name="signup_link">Donot have an account?<b>Sign Up Here</b></string>
-    <string name="et_email"><font size="15">Email Address</font></string>
+    <string name="signup_link">Don\'t have an Account?<b> SignUp Here</b></string>
+    <string name="et_email"><font size="15">EmailId</font></string>
     <string name="et_password"><font size="15">Password</font></string>
     <string name="et_user"><font size="15">User Name</font></string>
     <string name="et_phone"><font size="15">Phone</font></string>
@@ -39,6 +39,7 @@
     <string name="et_productprice"><font size="15">Membership Price</font></string>
     <string name="et_currentbal"><font size="15">Current Balance</font></string>
     <string name="et_totalamt"><font size="15">Total Amount</font></string>
+    <string name="forgot_password">Forgot password</string>
 
 
 </resources>
