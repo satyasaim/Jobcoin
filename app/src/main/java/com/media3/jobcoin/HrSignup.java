@@ -46,7 +46,7 @@ public class HrSignup extends AppCompatActivity {
    //String filePath = null;
    // String[] mediaColumns = { MediaStore.Video.Media._ID };
    ProgressDialog progressDialog;
-
+    TextView textView;
    EditText et_hr_sign_name,et_hr_sign_pass,et_hr_Email,et_hr_Phone,et_hr_alt_phone,et_hr_company_type,et_hr_qual,et_hr_Address,
            et_hr_Zipcode,et_hr_adhar,et_hr_linked,et_hr_fbook,et_hr_pro_pic,et_hr_adhar_img,et_hr_resume;
    ImageView img_hr_Back;
@@ -56,20 +56,22 @@ public class HrSignup extends AppCompatActivity {
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_hr_signup);
+      textView = (TextView)findViewById(R.id.tv_login);
 //       et_hr_sign_name.setFocusableInTouchMode(true);
 //       et_hr_sign_name.requestFocus();
       hrSignupData();
       progressDialog = new ProgressDialog(this);
       progressDialog.setMessage("Uploading...");
 
-       img_hr_Back.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               Intent intent = new Intent(HrSignup.this,Login.class);
-               startActivity(intent);
-           }
-       });
-
+             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+             getSupportActionBar().setHomeButtonEnabled(true);
+              textView.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View v) {
+                      Intent ilogin = new Intent(HrSignup.this,Login.class);
+                      startActivity(ilogin);
+                  }
+              });
       bt_hr_upload_img.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
@@ -331,7 +333,6 @@ public class HrSignup extends AppCompatActivity {
        bt_select_Resume = findViewById(R.id.bt_select_Resume);
        bt_upload_resume = findViewById(R.id.bt_upload_resume);
        bt_hr_signup = findViewById(R.id.bt_hr_signup);
-       img_hr_Back = findViewById(R.id.img_hr_Back);
    }
    public void hrRegistration()
    {
@@ -657,11 +658,9 @@ public class HrSignup extends AppCompatActivity {
 
 
     }
-    @Override
-    public void onBackPressed() {
-//        Intent intent = new Intent(HrSignup.this,Login.class);
-//        startActivity(intent);
-       //super.onBackPressed();
 
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

@@ -58,8 +58,8 @@
         <activity android:name=".JobSeekerMainScreen" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".SinupSeperator" />
-        <activity android:name=".HrSignup" />
-        <activity android:name=".JseekerSignUp" />
+        <activity android:name=".HrSignup" android:label="HRSignup" android:theme="@style/AppTheme"/>
+        <activity android:name=".JseekerSignUp" android:label="Jobseeker Signup" android:theme="@style/AppTheme"/>
         <activity android:name=".Planbenifits" />
         <activity android:name=".Login"/>
         <activity android:name=".Splash">

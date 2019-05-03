@@ -30,15 +30,9 @@ ImageView im_js_signup_logo,img_jseeker_Back;
 
         setContentView(R.layout.activity_jseeker_sign_up);
         jseekerSignupData();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
-        img_jseeker_Back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(JseekerSignUp.this,Login.class);
-                startActivity(intent);
-
-            }
-        });
 
 
         bt_signup.setOnClickListener(new View.OnClickListener() {
@@ -127,7 +121,6 @@ ImageView im_js_signup_logo,img_jseeker_Back;
         et_signup_phone = findViewById(R.id.et_signup_phone);
         et_adhar = findViewById(R.id.et_adhar);
         et_signup_pasword = findViewById(R.id.et_signup_pasword);
-        img_jseeker_Back = findViewById(R.id.img_jseeker_Back);
         //et_signup_conpasword = findViewById(R.id.et_signup_conpasword);
     }
 
@@ -190,10 +183,9 @@ ImageView im_js_signup_logo,img_jseeker_Back;
 //            });
     }
     @Override
-    public void onBackPressed() {
-//        Intent intent = new Intent(JseekerSignUp.this,Login.class);
-//        startActivity(intent);
-        //super.onBackPressed();
 
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }
