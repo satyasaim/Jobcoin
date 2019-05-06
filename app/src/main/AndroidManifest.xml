@@ -40,8 +40,7 @@
         <activity android:name=".MySilverCoin" />
         <activity android:name=".MyBronzeCoin" />
         <activity android:name=".ContactAndResumeupload" />
-        <activity android:name=".ProjectAndInternship" />
-        <activity android:name=".ExperienceAndAddress" />
+        <activity android:name=".ExperienceAndAddress" android:theme="@style/AppTheme" android:label="Experience " />
         <activity android:name=".JobSeekerCourses" />
         <activity android:name=".ProfileList" />
         <activity android:name=".SilverProfileList" />
@@ -56,7 +55,7 @@
         <activity android:name=".JseekerResume" />
         <activity android:name=".HrMainScreen" />
         <activity android:name=".JobSeekerMainScreen" />
-        <activity android:name=".ForgotPassword" />
+        <activity android:name=".ForgotPassword"  android:label="ForgotPassword" android:theme="@style/AppTheme" />
         <activity android:name=".SinupSeperator" />
         <activity android:name=".HrSignup" android:label="HRSignup" android:theme="@style/AppTheme"/>
         <activity android:name=".JseekerSignUp" android:label="Jobseeker Signup" android:theme="@style/AppTheme"/>

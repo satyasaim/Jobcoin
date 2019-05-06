@@ -147,13 +147,14 @@ ImageView im_js_signup_logo,img_jseeker_Back;
                    // Toast.makeText(getApplicationContext(), response.body().getStatus(), Toast.LENGTH_LONG).show();
 
                    progressDialog.dismiss();
-                    //success
-                    //below if condition is for after registration was succeded go back to login page.
-//                    if(response.body().getStatus().equals("success"))
-//                    {
-//                        Intent intent = new Intent(JseekerSignUp.this,Login.class);
-//                        startActivity(intent);
-//                    }
+
+                   Intent i = new  Intent(JseekerSignUp.this,Login.class);
+                   startActivity(i);
+                    if(response.body().getStatus().equals("success"))
+                    {
+                        Intent intent = new Intent(JseekerSignUp.this,Login.class);
+                        startActivity(intent);
+                    }
 
 
                 }
@@ -162,9 +163,7 @@ ImageView im_js_signup_logo,img_jseeker_Back;
                 @Override
                 public void onFailure(Call<JSeekerSignUpResponse> call, Throwable t) {
 
-                  // onSignupFailed();
                     Validations.MyAlertBox(JseekerSignUp.this,"Email already existed");
-                   // Toast.makeText(getApplicationContext(), "Email already existed", Toast.LENGTH_LONG).show();
 
                     progressDialog.dismiss();
                 }

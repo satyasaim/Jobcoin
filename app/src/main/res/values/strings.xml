@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="string_name">text_string</string>
-    <string name="app_name"></string>
+    <string name="app_name">JobCoin</string>
     <string name="signup_link">Don\'t have an Account?<b> Signup Here</b></string>
     <string name="et_email"><font size="15">EmailId</font></string>
     <string name="et_password"><font size="15">Password</font></string>

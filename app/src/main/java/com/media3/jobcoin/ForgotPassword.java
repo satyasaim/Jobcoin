@@ -29,18 +29,12 @@ ImageView img_Back_arrow;
         setContentView(R.layout.activity_forgot_password);
         bt_submit = findViewById(R.id.bt_submit);
         et_forgot_email = findViewById(R.id.et_forgot_email);
-        img_Back_arrow = findViewById(R.id.img_Back_arrow);
 //        String email = getIntent().getStringExtra("Email");
 //        et_forgot_email.setText(email);
 
-        img_Back_arrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ForgotPassword.this,Login.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
         bt_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,12 +86,9 @@ ImageView img_Back_arrow;
             }
         });
     }
-    @Override
-    public void onBackPressed() {
-      Log.d("tag", "this is forgot");
-//    Intent intent = new Intent(ForgotPassword.this,Login.class);
-//    startActivity(intent);
-       super.onBackPressed();
 
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }
