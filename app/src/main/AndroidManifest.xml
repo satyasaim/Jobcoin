@@ -39,28 +39,30 @@
         <activity android:name=".MyPlatinumCoin" />
         <activity android:name=".MySilverCoin" />
         <activity android:name=".MyBronzeCoin" />
-        <activity android:name=".ContactAndResumeupload" />
-        <activity android:name=".ExperienceAndAddress" android:theme="@style/AppTheme" android:label="Experience " />
-        <activity android:name=".JobSeekerCourses" />
+        <activity android:name=".ContactAndResumeupload" android:theme="@style/AppTheme" android:label="Jobseeker"/>
+        <activity android:name=".ExperienceAndAddress" android:theme="@style/AppTheme" android:label="Jobseeker" />
+        <activity android:name=".JobSeekerCourses" android:theme="@style/AppTheme" android:label="Jobseeker"/>
         <activity android:name=".ProfileList" />
         <activity android:name=".SilverProfileList" />
         <activity android:name=".SelectedResumes" />
         <activity android:name=".SelectYrHr" />
-        <activity android:name=".MeetHrExecutive" />
+        <activity android:name=".MeetHrExecutive" android:label="Jobseeker" android:theme="@style/AppTheme" />
         <activity android:name=".MyCoin" />
-        <activity android:name=".BuyCoin" />
+        <activity android:name=".BuyCoin"/>
         <activity android:name=".FindResumes" />
         <activity android:name=".EditHrAccount" />
         <activity android:name=".CoinEarnings" />
         <activity android:name=".JseekerResume" />
         <activity android:name=".HrMainScreen" />
-        <activity android:name=".JobSeekerMainScreen" />
+        <activity android:name=".JobSeekerMainScreen" android:label="Jobseeker" android:theme="@style/AppTheme" />
         <activity android:name=".ForgotPassword"  android:label="ForgotPassword" android:theme="@style/AppTheme" />
         <activity android:name=".SinupSeperator" />
         <activity android:name=".HrSignup" android:label="HRSignup" android:theme="@style/AppTheme"/>
         <activity android:name=".JseekerSignUp" android:label="Jobseeker Signup" android:theme="@style/AppTheme"/>
         <activity android:name=".Planbenifits" />
         <activity android:name=".Login"/>
+        <activity android:name=".ProjectAndInternship" android:label="Jobseeker" android:theme="@style/AppTheme" />
+
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

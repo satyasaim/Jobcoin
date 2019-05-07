@@ -18,7 +18,6 @@ String membershipid,membershipname,membershipprice,currentbalance,totalamount,pr
 
 
 
-
         bt_bron_getcoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

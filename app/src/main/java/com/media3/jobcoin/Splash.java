@@ -20,7 +20,7 @@ public class Splash extends AppCompatActivity {
                 try {
                     sleep(3000);
 
-                    Intent splashIntent = new Intent(Splash.this, Login.class);
+                    Intent splashIntent = new Intent(Splash.this, JobSeekerMainScreen.class);
                     startActivity(splashIntent);
                 } catch (InterruptedException e) {
                     e.printStackTrace();

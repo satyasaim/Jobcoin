@@ -150,7 +150,7 @@ public class Login extends AppCompatActivity {
     public void logIn() {
         final ProgressDialog progressDialog = new ProgressDialog(Login.this);
         progressDialog.setCancelable(false); // set cancelable to false
-        progressDialog.setMessage("Please Wait"); // set message
+        progressDialog.setMessage("Please wait profile accessing...."); // set message
         progressDialog.show(); // show progress dialog
 
         Api.getapiContext(getApplicationContext());
@@ -216,7 +216,7 @@ public class Login extends AppCompatActivity {
                 }
                 if(response.body().getStatus().equals("fail"))
                {
-                   Validations.MyAlertBox(Login.this,"Email Or password are wrong");
+                   Validations.MyAlertBox(Login.this,"Enter Valid Email and Password");
                    //Toast.makeText(getApplicationContext(), "Entered wrong password", Toast.LENGTH_SHORT).show();
                }
             }
