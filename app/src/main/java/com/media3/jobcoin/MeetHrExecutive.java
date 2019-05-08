@@ -33,7 +33,8 @@ String qualification, passyear, grade,percentage,mediumofstudy;
         ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,qualifiction);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin_quali.setAdapter(aa);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
         ArrayList<String> years = new ArrayList<String>();
         years.add("Passed year");
@@ -193,5 +194,9 @@ String qualification, passyear, grade,percentage,mediumofstudy;
         radioButton2 = findViewById(R.id.radioButton2);
         //RadioGroup radioGroup =  findViewById(R.id.radioGroup);
 
+    }
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

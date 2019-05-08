@@ -32,8 +32,8 @@ public class ProjectAndInternship extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_project_and_internship);
         projectandinternshipData();
-
-//ch_tel_read.setOnClickListener(new View.OnClickListener() {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);//ch_tel_read.setOnClickListener(new View.OnClickListener() {
 //    @Override
 //    public void onClick(View v) {
 //        if(ch_tel_read.isChecked())
@@ -201,5 +201,10 @@ public class ProjectAndInternship extends AppCompatActivity {
         ch_oria_read = findViewById(R.id.ch_oria_read);
         ch_oria_right = findViewById(R.id.ch_oria_right);
         ch_oria_speak = findViewById(R.id.ch_oria_speak);
+    }
+
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

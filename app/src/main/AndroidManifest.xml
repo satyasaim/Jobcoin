@@ -39,22 +39,22 @@
         <activity android:name=".MyPlatinumCoin" />
         <activity android:name=".MySilverCoin" />
         <activity android:name=".MyBronzeCoin" />
-        <activity android:name=".ContactAndResumeupload" android:theme="@style/AppTheme" android:label="Jobseeker"/>
-        <activity android:name=".ExperienceAndAddress" android:theme="@style/AppTheme" android:label="Jobseeker" />
-        <activity android:name=".JobSeekerCourses" android:theme="@style/AppTheme" android:label="Jobseeker"/>
+        <activity android:name=".ContactAndResumeupload" android:theme="@style/AppTheme" android:label="Jobcoin"/>
+        <activity android:name=".ExperienceAndAddress" android:theme="@style/AppTheme" android:label="Jobcoin" />
+        <activity android:name=".JobSeekerCourses" android:theme="@style/AppTheme" android:label="Jobcoin"/>
         <activity android:name=".ProfileList" />
         <activity android:name=".SilverProfileList" />
         <activity android:name=".SelectedResumes" />
         <activity android:name=".SelectYrHr" />
-        <activity android:name=".MeetHrExecutive" android:label="Jobseeker" android:theme="@style/AppTheme" />
+        <activity android:name=".MeetHrExecutive" android:label="Jobcoin" android:theme="@style/AppTheme" />
         <activity android:name=".MyCoin" />
         <activity android:name=".BuyCoin"/>
         <activity android:name=".FindResumes" />
         <activity android:name=".EditHrAccount" />
         <activity android:name=".CoinEarnings" />
-        <activity android:name=".JseekerResume" />
+        <activity android:name=".JseekerResume" android:label="Jobcoin" android:theme="@style/AppTheme"/>
         <activity android:name=".HrMainScreen" />
-        <activity android:name=".JobSeekerMainScreen" android:label="Jobseeker" android:theme="@style/AppTheme" />
+        <activity android:name=".JobSeekerMainScreen" android:label="Jobcoin" android:theme="@style/AppTheme" />
         <activity android:name=".ForgotPassword"  android:label="ForgotPassword" android:theme="@style/AppTheme" />
         <activity android:name=".SinupSeperator" />
         <activity android:name=".HrSignup" android:label="HRSignup" android:theme="@style/AppTheme"/>

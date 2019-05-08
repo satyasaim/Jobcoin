@@ -30,6 +30,7 @@ ImageView im_js_signup_logo,img_jseeker_Back;
 
         setContentView(R.layout.activity_jseeker_sign_up);
         jseekerSignupData();
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 

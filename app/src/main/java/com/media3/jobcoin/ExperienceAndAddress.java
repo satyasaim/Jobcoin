@@ -16,7 +16,8 @@ String experience,permadd,presadd,location;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_experience_and_address);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
         bt_exp_prev = findViewById(R.id.bt_exp_prev);
         bt_exp_next = findViewById(R.id.bt_exp_next);
         et_experience = findViewById(R.id.et_experience);
@@ -105,5 +106,9 @@ String experience,permadd,presadd,location;
 
         });
 
+    }
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

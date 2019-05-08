@@ -41,6 +41,8 @@
     <string name="et_totalamt"><font size="15">Total Amount</font></string>
     <string name="forgot_password">Forgot password</string>
     <string name="already_have_an_account_login">Already have an account? <b>LOGIN</b></string>
+    <string name="bronze_coin">Bronze Coin</string>
+    <string name="silver_coin">SilverCoin</string>
 
 
 </resources>

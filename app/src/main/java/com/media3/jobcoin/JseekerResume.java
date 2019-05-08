@@ -92,6 +92,8 @@ public class JseekerResume extends AppCompatActivity {
                 }
             }
         });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
 
 
@@ -146,5 +148,10 @@ public class JseekerResume extends AppCompatActivity {
             et_resume_father_name = findViewById(R.id.et_resume_father_name);
             et_resume_mother_name = findViewById(R.id.et_resume_mother_name);
         }
+
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
+}
 

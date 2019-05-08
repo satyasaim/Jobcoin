@@ -53,7 +53,8 @@ public class ContactAndResumeupload extends AppCompatActivity {
         et_resumename = findViewById(R.id.et_resumename);
         bt_cho_resume = findViewById(R.id.bt_cho_resume);
         bt_upload_jseeker_resume = findViewById(R.id.bt_upload_jseeker_resume);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Uploading...");
         
@@ -355,5 +356,8 @@ public class ContactAndResumeupload extends AppCompatActivity {
         return valid;
     }
 
-
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }

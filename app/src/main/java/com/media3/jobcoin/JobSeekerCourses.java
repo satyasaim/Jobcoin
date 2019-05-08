@@ -62,6 +62,8 @@ public class JobSeekerCourses extends AppCompatActivity {
              }
             }
         });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 
 
     }
@@ -103,6 +105,13 @@ public class JobSeekerCourses extends AppCompatActivity {
             }
             return valid;
         }
+
+
+
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
+}
 
 

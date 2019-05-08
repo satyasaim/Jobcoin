@@ -446,4 +446,8 @@ public class EditHrAccount extends AppCompatActivity {
 //
 //        return;
 //    }
+public boolean onSupportNavigateUp() {
+    onBackPressed();
+    return true;
+}
 }
