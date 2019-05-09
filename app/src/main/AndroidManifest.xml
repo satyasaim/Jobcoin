@@ -58,7 +58,7 @@
         <activity android:name=".ForgotPassword"  android:label="ForgotPassword" android:theme="@style/AppTheme" />
         <activity android:name=".SinupSeperator" />
         <activity android:name=".HrSignup" android:label="HRSignup" android:theme="@style/AppTheme"/>
-        <activity android:name=".JseekerSignUp" android:label="Jobseeker Signup" android:theme="@style/AppTheme"/>
+        <activity android:name=".JseekerSignUp" android:label="Jobcoin" android:theme="@style/AppTheme"/>
         <activity android:name=".Planbenifits" />
         <activity android:name=".Login"/>
         <activity android:name=".ProjectAndInternship" android:label="Jobseeker" android:theme="@style/AppTheme" />

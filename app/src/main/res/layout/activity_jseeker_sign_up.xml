@@ -15,7 +15,7 @@
         android:layout_width="174dp"
         android:layout_height="122dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginRight="8dp"
         android:src="@drawable/applogo"
         app:layout_constraintHorizontal_bias="0.497"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="167dp"
         android:layout_marginLeft="167dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="187dp"
         android:layout_marginRight="187dp"
         android:text="Job Seeker Sign Up"
@@ -180,14 +180,18 @@
 
     <EditText
         android:id="@+id/sp_ref_code"
-        android:layout_width="160dp"
+        android:layout_width="0dp"
         android:layout_height="36dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
         android:background="@drawable/et_borders"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_ref_code"
         app:layout_constraintTop_toBottomOf="@+id/tv_signup" />
 
     <!--<ImageView-->
@@ -203,18 +207,16 @@
 
     <TextView
         android:id="@+id/tv_ref_code"
-        android:layout_width="125dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/lato_bold"
         android:text="Reference Code:"
         android:textAlignment="center"
         android:textColor="#000"
         android:textSize="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/sp_ref_code"
-        app:layout_constraintHorizontal_bias="0.774"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_signup" />
 
