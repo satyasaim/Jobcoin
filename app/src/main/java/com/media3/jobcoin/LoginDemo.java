@@ -1,5 +1,6 @@
 package com.media3.jobcoin;
 
+
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -21,7 +22,7 @@ import com.media3.jobcoin.Pojo.Users;
 import retrofit2.Call;
 import retrofit2.Response;
 
-public class Login extends AppCompatActivity {
+public class LoginDemo extends AppCompatActivity {
     Button bt_login;
     TextView tv_acc_signup, tv_forgotpas, tv_help;
     EditText et_login_email, et_login_password;
@@ -57,27 +58,27 @@ public class Login extends AppCompatActivity {
 
 
             public boolean validate() {
-                    boolean valid = true;
+                boolean valid = true;
 
-                    String email = et_login_email.getText().toString();
-                    String password = et_login_password.getText().toString();
+                String email = et_login_email.getText().toString();
+                String password = et_login_password.getText().toString();
 
-                    if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                        et_login_email.setError("enter a valid email address");
-                        valid = false;
-                    } else {
-                        et_login_email.setError(null);
-                    }
-
-                    if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
-                        et_login_password.setError("between 4 and 10 alphanumeric characters");
-                        valid = false;
-                    } else {
-                        et_login_password.setError(null);
-                    }
-
-                    return valid;
+                if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    et_login_email.setError("enter a valid email address");
+                    valid = false;
+                } else {
+                    et_login_email.setError(null);
                 }
+
+                if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
+                    et_login_password.setError("between 4 and 10 alphanumeric characters");
+                    valid = false;
+                } else {
+                    et_login_password.setError(null);
+                }
+
+                return valid;
+            }
 
         });
 
@@ -85,7 +86,7 @@ public class Login extends AppCompatActivity {
         tv_forgotpas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, ForgotPassword.class);
+                Intent intent = new Intent(LoginDemo.this, ForgotPassword.class);
                 intent.putExtra("Email",et_login_email.getText().toString().trim());
                 startActivity(intent);
                 finish();
@@ -96,7 +97,7 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
 //                Intent intent = new Intent(MainActivity.this,SignUp.class);
 //                startActivity(intent);
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(Login.this);
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(LoginDemo.this);
                 View dview = getLayoutInflater().inflate(R.layout.activity_sinup_seperator, null);
                 alertDialog.setView(dview);
                 AlertDialog dialog = alertDialog.create();
@@ -107,7 +108,7 @@ public class Login extends AppCompatActivity {
                 hr_signup.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(Login.this, HrSignup.class);
+                        Intent intent = new Intent(LoginDemo.this, HrSignup.class);
                         startActivity(intent);
                         finish();
                     }
@@ -115,7 +116,7 @@ public class Login extends AppCompatActivity {
                 jseek_sign.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(Login.this, JseekerSignUp.class);
+                        Intent intent = new Intent(LoginDemo.this, JseekerSignUp.class);
                         startActivity(intent);
                         finish();
                     }
@@ -123,7 +124,7 @@ public class Login extends AppCompatActivity {
                 img_cancel.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(Login.this, Login.class);
+                        Intent intent = new Intent(LoginDemo.this, Login.class);
                         startActivity(intent);
                         finish();
 
@@ -148,7 +149,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void logIn() {
-        final ProgressDialog progressDialog = new ProgressDialog(Login.this);
+        final ProgressDialog progressDialog = new ProgressDialog(LoginDemo.this);
         progressDialog.setCancelable(false); // set cancelable to false
         progressDialog.setMessage("Please wait profile accessing...."); // set message
         progressDialog.show(); // show progress dialog
@@ -162,7 +163,7 @@ public class Login extends AppCompatActivity {
                 progressDialog.dismiss();
                 if (response.body().getStatus().equals("success")) {
 
-                 Log.d("status:",response.body().getStatus());
+                    Log.d("status:",response.body().getStatus());
                     Users data = response.body().getData().getUsers();
 
 
@@ -200,30 +201,30 @@ public class Login extends AppCompatActivity {
                         //Validations.MyAlertBox(Login.this,"U are login as Job Seeker");
                         //Toast.makeText(getApplicationContext(), "U are login as Job Seeker", Toast.LENGTH_SHORT).show();
 
-                        Intent jsintent = new Intent(Login.this, JobSeekerMainScreen.class);
+                        Intent jsintent = new Intent(LoginDemo.this, JobSeekerMainScreen.class);
                         startActivity(jsintent);
 
                     } else if ((response.body().getData().getUsers().getRole()).equalsIgnoreCase("Hr")) {
-                      //  Validations.MyAlertBox(Login.this,"U are login as HR");
-                       //Toast.makeText(getApplicationContext(), "U are login as HR", Toast.LENGTH_SHORT).show();
-                       Intent hrintent = new Intent(Login.this, HrMainScreen.class);
+                        //  Validations.MyAlertBox(Login.this,"U are login as HR");
+                        //Toast.makeText(getApplicationContext(), "U are login as HR", Toast.LENGTH_SHORT).show();
+                        Intent hrintent = new Intent(LoginDemo.this, HrMainScreen.class);
                         startActivity(hrintent);
                     }else {
-                       // Validations.MyAlertBox(Login.this,"Invalid credentials");
-                        Validations.MyAlertBox(Login.this,"Invalid credentials");
+                        // Validations.MyAlertBox(Login.this,"Invalid credentials");
+                        Validations.MyAlertBox(LoginDemo.this,"Invalid credentials");
                         //Toast.makeText(getApplicationContext(), "Invalid credentials", Toast.LENGTH_LONG).show();
                     }
                 }
                 if(response.body().getStatus().equals("fail"))
-               {
-                   Validations.MyAlertBox(Login.this,"Enter Valid Email and Password");
-                   //Toast.makeText(getApplicationContext(), "Entered wrong password", Toast.LENGTH_SHORT).show();
-               }
+                {
+                    Validations.MyAlertBox(LoginDemo.this,"Enter Valid Email and Password");
+                    //Toast.makeText(getApplicationContext(), "Entered wrong password", Toast.LENGTH_SHORT).show();
+                }
             }
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
-           Validations.MyAlertBox(Login.this,"Invalid credentials/ request failed");
-              // Toast.makeText(getApplicationContext(), "Invalid credentials/ request failed ", Toast.LENGTH_LONG).show();
+                Validations.MyAlertBox(LoginDemo.this,"Invalid credentials/ request failed");
+                // Toast.makeText(getApplicationContext(), "Invalid credentials/ request failed ", Toast.LENGTH_LONG).show();
                 progressDialog.dismiss();
             }
         });
@@ -231,12 +232,12 @@ public class Login extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-       //Intent intent = new Intent(HrSignup.this,Login.class);
-       //startActivity(intent);
+        //Intent intent = new Intent(HrSignup.this,Login.class);
+        //startActivity(intent);
         //super.onBackPressed();
 
 
-  }
+    }
 }
 
 
