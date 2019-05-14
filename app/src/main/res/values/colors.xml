@@ -5,8 +5,10 @@
     <color name="colorAccent">#FF4081</color>
     <color name="your_color">#FFFFFF</color>
     <color name="black">#000</color>
-    <color name="lightcyan">#c6d6d6</color>
+    <color name="blue">#2e3192</color>
     <color name="darkblue">#0f053a</color>
+
+    <color name="lightcyan">#c6d6d6</color>
     <color name="darkornage">#d26021</color>
     <color name="gray">#cdcac1</color>
     <color name="goldcolor">#d6b449</color>

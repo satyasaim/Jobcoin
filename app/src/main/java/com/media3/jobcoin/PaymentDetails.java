@@ -35,7 +35,8 @@ String seeker_id,name,mailid,phoneno,address,product_id,membershipName,amount,cu
         paymentData();
 
 
-
+       getSupportActionBar().setHomeButtonEnabled(true);
+       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         seeker_id = new PrefManager(getApplicationContext()).getId();
         name = new PrefManager(getApplicationContext()).gethrname();
         et_payment_name.setText(name);
@@ -241,5 +242,11 @@ String seeker_id,name,mailid,phoneno,address,product_id,membershipName,amount,cu
         et_payment_prodprice = findViewById(R.id.et_payment_prodprice);
         ct_payment_currentbal = findViewById(R.id.ct_payment_currentbal);
         et_payment_totalbal = findViewById(R.id.et_payment_totalbal);
+    }
+
+
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

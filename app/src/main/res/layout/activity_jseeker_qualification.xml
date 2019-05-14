@@ -79,10 +79,12 @@
         android:layout_width="38dp"
 
         android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/down_spin_img"
         app:layout_constraintEnd_toEndOf="@+id/spin_year"
-        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintHorizontal_bias="0.993"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/spin_year" />
 

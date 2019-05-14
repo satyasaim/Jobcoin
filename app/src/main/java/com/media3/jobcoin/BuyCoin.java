@@ -12,9 +12,10 @@ String membershipid,membershipname,membershipprice,currentbalance,totalamount,pr
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buy_coin);
-
-        findByIds();
+        setContentView(R.layout.activity_coin_get_job);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+    findByIds();
 
 
 
@@ -121,14 +122,24 @@ String membershipid,membershipname,membershipprice,currentbalance,totalamount,pr
 
     public  void findByIds()
     {
-        bt_get_coin = findViewById(R.id.bt_get_coin);
-        bt_bron_getcoin = findViewById(R.id.bt_bron_getcoin);
-        bt_getsilvercoin = findViewById(R.id.bt_getsilvercoin);
-        bt_plat_getcoin = findViewById(R.id.bt_plat_getcoin);
-        bt_bron_knowmore = findViewById(R.id.bt_bron_knowmore);
-        bt_silver_knowmore = findViewById(R.id.bt_silver_knowmore);
-        bt_know_more = findViewById(R.id.bt_know_more);
-        bt_plat_knowmore = findViewById(R.id.bt_plat_knowmore);
+        bt_get_coin = findViewById(R.id.btngoldgetcoin);
+        bt_know_more = findViewById(R.id.btngoldknowmore);
 
+
+        bt_getsilvercoin = findViewById(R.id.btnsilvergetcoin);
+        bt_silver_knowmore = findViewById(R.id.btnsilverknowmore);
+
+
+        bt_bron_knowmore = findViewById(R.id.btnknowmore);
+        bt_bron_getcoin = findViewById(R.id.btngetbronzecoin);
+
+        bt_plat_getcoin = findViewById(R.id.btnplatinumgetcoin);
+        bt_plat_knowmore = findViewById(R.id.btnplatinumknowmore);
+
+    }
+
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

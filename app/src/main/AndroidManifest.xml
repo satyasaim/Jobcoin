@@ -31,12 +31,11 @@
         </activity>
         <activity android:name=".PlatinumProfileList" />
         <activity android:name=".GoldProfileList" />
-        <activity android:name=".PaymentDetails" />
-        <activity android:name=".PlatinumDescription" />
-        <activity android:name=".GoldDescription" />
-        <activity android:name=".SilverDescription" />
-        <activity android:name=".BronzeDescription" />
-        <activity android:name=".MyPlatinumCoin" />
+        <activity android:name=".PaymentDetails"  android:label="Jobcoin" android:theme="@style/AppTheme" />
+        <activity android:name=".PlatinumDescription" android:label="Jobcoin" android:theme="@style/AppTheme"/>
+        <activity android:name=".GoldDescription" android:label="Jobcoin" android:theme="@style/AppTheme" />
+        <activity android:name=".SilverDescription" android:label="Jobcoin" android:theme="@style/AppTheme" />
+         <activity android:name=".MyPlatinumCoin" />
         <activity android:name=".MySilverCoin" />
         <activity android:name=".MyBronzeCoin" />
         <activity android:name=".ContactAndResumeupload" android:theme="@style/AppTheme" android:label="Jobcoin"/>
@@ -48,7 +47,7 @@
         <activity android:name=".SelectYrHr" />
         <activity android:name=".MeetHrExecutive" android:label="Jobcoin" android:theme="@style/AppTheme" />
         <activity android:name=".MyCoin" />
-        <activity android:name=".BuyCoin"/>
+        <activity android:name=".BuyCoin" android:label="Jobcoin" android:theme="@style/AppTheme"/>
         <activity android:name=".FindResumes" />
         <activity android:name=".EditHrAccount" />
         <activity android:name=".CoinEarnings" />
@@ -61,6 +60,7 @@
         <activity android:name=".JseekerSignUp" android:label="Jobcoin" android:theme="@style/AppTheme"/>
         <activity android:name=".Planbenifits" />
         <activity android:name=".Login"/>
+        <activity android:name=".BronzeDescription" android:theme="@style/AppTheme"/>
         <activity android:name=".ProjectAndInternship" android:label="Jobseeker" android:theme="@style/AppTheme" />
 
         <activity android:name=".Splash">

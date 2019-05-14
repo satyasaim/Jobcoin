@@ -34,10 +34,13 @@
             android:layout_marginLeft="110dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="10dp"
+            android:textAlignment="center"
             android:fontFamily="@font/lato_bold"
-            android:text="FIND PROFILE"
+            android:text="YOUR COIN"
             android:textColor="#fff"
-            android:textSize="30dp" />
+            android:textSize="26sp"
+            android:layout_marginStart="110dp"
+            android:layout_marginEnd="10dp" />
 
 
     </RelativeLayout>
@@ -45,7 +48,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/con_buy_silver"
         android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_height="135dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/et_borders"
         android:padding="5dp"
@@ -165,7 +168,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/con_buy_platinum"
         android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_height="136dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/et_borders"
         android:padding="5dp"
@@ -285,7 +288,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/con_buy_gold"
         android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_height="136dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/et_borders"
         android:padding="5dp"
@@ -405,7 +408,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/con_buy_bronze"
         android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_height="135dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/et_borders"
         android:padding="5dp"

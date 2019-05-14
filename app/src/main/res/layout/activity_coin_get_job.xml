@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightcyan"
+    tools:context=".BuyCoin">
+
+
+    <TextView
+        android:id="@+id/titlegetcoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:padding="3dp"
+        android:text="Get Coin.. Get Job.."
+        android:textColor="@color/darkblue"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/bronzecoinlayout"
+        android:layout_width="335dp"
+        android:layout_height="113dp"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rectangle_border_tv"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlegetcoin">
+
+        <ImageView
+            android:id="@+id/idbronzeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:padding="2dp"
+            android:src="@drawable/bronze_coin" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/idbronzeicon"
+            android:layout_toRightOf="@+id/idbronzeicon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+
+                android:layout_marginTop="12dp"
+                android:text="@string/bronze_coin"
+                android:textColor="@color/darkornage"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bronze_5000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:text="5,000" />
+
+
+            <View
+                android:id="@+id/bronze_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/bronze_5000"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/gray" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/idbronze_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bronze_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+
+                android:layout_marginTop="8dp"
+                android:text="Upto 1.2 Lakh P.A and 30+ HREs Assistance on a single profile."
+                android:textColor="#545454"
+                android:textSize="8sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idbronze_subtitle"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/bronze_get_job_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="2dp"
+                    android:text="Get Job in 60 Days*"
+                    android:textColor="#545454"
+                    android:textSize="8sp" />
+
+                <Button
+                    android:id="@+id/btnknowmore"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toEndOf="@+id/bronze_get_job_days"
+                    android:layout_toRightOf="@+id/bronze_get_job_days"
+                    android:background="@color/gray"
+                    android:text="Know More"
+                    android:textColor="#ffff"
+                    android:textSize="6sp" />
+
+                <Button
+                    android:id="@+id/btngetbronzecoin"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="2dp"
+
+
+                    android:layout_marginLeft="2dp"
+                    android:layout_toEndOf="@+id/btnknowmore"
+                    android:layout_toRightOf="@+id/btnknowmore"
+                    android:background="@color/darkblue"
+                    android:text="Get Coin"
+                    android:textColor="#fff"
+                    android:textSize="6sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/silverecoinlayout"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rectangle_border_tv"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bronzecoinlayout">
+
+        <ImageView
+            android:id="@+id/idsilvericon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:padding="2dp"
+            android:src="@drawable/silver_coin"
+            android:layout_marginLeft="4dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/idsilvericon"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/idsilvericon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+
+                android:text="@string/silver_coin"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="6dp" />
+
+            <TextView
+                android:id="@+id/silver_5000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="18dp"
+                android:text="10,000"
+                android:layout_marginRight="18dp" />
+
+
+            <View
+                android:id="@+id/silver_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/silver_5000"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="18dp"
+
+                android:background="@color/gray"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="18dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/idsilver_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/silver_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+
+                android:text="Upto 1.2 Lakh P.A and 45+ HREs Assistance on a single profile."
+                android:textColor="#545454"
+                android:textSize="8sp"
+                android:layout_marginLeft="6dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idsilver_subtitle"
+
+
+                android:layout_marginEnd="8dp"
+
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:layout_marginRight="8dp">
+
+                <TextView
+                    android:id="@+id/silver_get_job_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+
+                    android:text="Get Job in 45 Days*"
+                    android:textColor="#545454"
+                    android:textSize="8sp"
+                    android:layout_marginLeft="2dp" />
+
+                <Button
+                    android:id="@+id/btnsilverknowmore"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/silver_get_job_days"
+                    android:background="@color/gray"
+                    android:text="Know More"
+                    android:textColor="#ffff"
+                    android:textSize="6sp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toRightOf="@+id/silver_get_job_days" />
+
+                <Button
+                    android:id="@+id/btnsilvergetcoin"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="2dp"
+
+                    android:layout_toEndOf="@+id/btnsilverknowmore"
+                    android:background="@color/darkblue"
+                    android:text="Get Coin"
+                    android:textColor="#fff"
+                    android:textSize="6sp"
+                    android:layout_toRightOf="@+id/btnsilverknowmore"
+                    android:layout_marginLeft="2dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/goldecoinlayout"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rectangle_border_tv"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/silverecoinlayout">
+
+        <ImageView
+            android:id="@+id/idgoldicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:padding="2dp"
+            android:src="@drawable/gold_coin"
+            android:layout_marginLeft="4dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/idgoldicon"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/idgoldicon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:text="GOLD COIN"
+                android:textColor="@color/goldcolor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="6dp" />
+
+            <TextView
+                android:id="@+id/gold_5000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="18dp"
+                android:text="20,000"
+                android:layout_marginRight="18dp" />
+
+
+            <View
+                android:id="@+id/gold_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/gold_5000"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="18dp"
+
+                android:background="@color/gray"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="18dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/idgold_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gold_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+
+                android:text="Upto 1.2 Lakh P.A and 60+ HREs Assistance on a single profile."
+                android:textColor="#545454"
+                android:textSize="8sp"
+                android:layout_marginLeft="6dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idgold_subtitle"
+                android:layout_marginStart="2dp"
+
+
+                android:layout_marginEnd="8dp"
+
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp">
+
+                <TextView
+                    android:id="@+id/gold_get_job_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Get Job in 30 Days*"
+                    android:textColor="#545454"
+                    android:textSize="8sp" />
+
+                <Button
+                    android:id="@+id/btngoldknowmore"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/gold_get_job_days"
+                    android:background="@color/gray"
+                    android:text="Know More"
+                    android:textColor="#ffff"
+                    android:textSize="6sp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toRightOf="@+id/gold_get_job_days" />
+
+                <Button
+                    android:id="@+id/btngoldgetcoin"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="2dp"
+
+                    android:layout_toEndOf="@+id/btngoldknowmore"
+                    android:background="@color/darkblue"
+                    android:text="Get Coin"
+                    android:textColor="#fff"
+                    android:textSize="6sp"
+                    android:layout_toRightOf="@+id/btngoldknowmore"
+                    android:layout_marginLeft="2dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/platinumecoinlayout"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangle_border_tv"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goldecoinlayout"
+        app:layout_constraintVertical_bias="0.005">
+
+        <ImageView
+            android:id="@+id/idplatinumicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:padding="2dp"
+            android:src="@drawable/silver_coin"
+            android:layout_marginLeft="4dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-3dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/idplatinumicon"
+            android:layout_toRightOf="@+id/idplatinumicon"
+            android:layout_marginLeft="-3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:text="PLATINUM COIN"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="6dp" />
+
+            <TextView
+                android:id="@+id/platinum_5000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="18dp"
+                android:text="50,000"
+                android:layout_marginRight="18dp" />
+
+
+            <View
+                android:id="@+id/platinum_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/platinum_5000"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="18dp"
+
+                android:background="@color/gray"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="18dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/idplatinum_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/platinum_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+
+                android:text="Upto 1.2 Lakh P.A and 100+ HREs Assistance on a single profile."
+                android:textColor="#545454"
+                android:textSize="8sp"
+                android:layout_marginLeft="6dp" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/platinum_get_job_days"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/idplatinum_subtitle"-->
+            <!--android:layout_marginStart="6dp"-->
+            <!--android:layout_marginTop="10dp"-->
+
+            <!--android:text="Get Job in 60 Days*"-->
+            <!--android:textColor="#545454"-->
+            <!--android:textSize="8sp" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idplatinum_subtitle"
+                android:layout_marginStart="2dp"
+
+
+                android:layout_marginEnd="8dp"
+
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="2dp">
+
+                <TextView
+                    android:id="@+id/platinum_get_job_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Get Job in 30 Days*"
+                    android:textColor="#545454"
+                    android:textSize="8sp" />
+
+                <Button
+                    android:id="@+id/btnplatinumknowmore"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/platinum_get_job_days"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:text="Know More"
+                    android:textColor="#ffff"
+                    android:textSize="6sp"
+                    android:layout_toRightOf="@+id/platinum_get_job_days"
+                    android:layout_marginLeft="24dp" />
+
+                <Button
+                    android:id="@+id/btnplatinumgetcoin"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@+id/btnplatinumknowmore"
+                    android:background="@color/darkblue"
+                    android:text="Get Coin"
+                    android:textColor="#fff"
+                    android:textSize="6sp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/btnplatinumknowmore" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
